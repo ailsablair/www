@@ -1,1 +1,11 @@
-text
+
+
+code {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  size: 64
+  weight: bold
+  color: #0EA5E9;
+}
