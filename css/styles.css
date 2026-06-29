@@ -44,6 +44,22 @@ h2 {
   margin-bottom: 12px;
 }
 
+h3 {
+  font-size: 36px;
+  font-weight: 700; /* Bold */
+  color: var(--color-text-heading-1);
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 500; /* Medium */
+  color: inherit;   /* Explicitly inherits the global font color default (#1C1C1C) */
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
 /* ==========================================================================
    Links
    ========================================================================== */
