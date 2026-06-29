@@ -1,48 +1,60 @@
-/*
-  1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
-  2. Remove default margins and padding
-  3. Reset all borders.
-*/
+/* ==========================================================================
+   Global Design Tokens & Base Styles
+   ========================================================================== */
 
-*,
-::after,
-::before,
-::backdrop,
-::file-selector-button {
-  box-sizing: border-box; /* 1 */
-  margin: 0; /* 2 */
-  padding: 0; /* 2 */
-  border: 0 solid; /* 3 */
+:root {
+  /* System Typography */
+  --font-global: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  
+  /* Color Palette */
+  --color-bg-global: #FAFAFA;
+  --color-text-global: #1C1C1C;
+  --color-text-heading-1: #0EA5E9;
+  --color-link-global: #EC379B;
 }
 
-html,
-:host {
-  line-height: 1.5; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  tab-size: 4; /* 3 */
-  font-family: --theme(
-    --default-mono-font-family,
-    ui-monospace,
-    SFMono-Regular,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Liberation Mono',
-    'Courier New',
-    monospace
-); /* 4 */
-  font-feature-settings: --theme(--default-font-feature-settings, normal); /* 5 */
-  font-variation-settings: --theme(--default-font-variation-settings, normal); /* 6 */
-  -webkit-tap-highlight-color: transparent; /* 7 */
+/* Base Body Setup */
+body {
+  font-family: var(--font-global);
+  color: var(--color-text-global);
+  background-color: var(--color-bg-global);
+  margin: 0;
+  padding: 24px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
-code {
-  background-color: #FAFAFA;
-  font-family: "Courier New", Courier, monospace;
-}
+/* ==========================================================================
+   Typography Elements
+   ========================================================================== */
 
 h1 {
-  size: 64
-  weight: bold
-  color: #0EA5E9;
+  font-size: 64px;
+  font-weight: 600; /* Semibold */
+  color: var(--color-text-heading-1);
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 500; /* Medium */
+  color: inherit;   /* Explicitly inherits the global font color default (#1C1C1C) */
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+a {
+  color: var(--color-link-global);
+  text-decoration: #EC379B;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+a:hover {
+  text-decoration: bold;
 }
