@@ -15,7 +15,7 @@
 
 /* Base Body Setup */
 body {
-   font-size: 64px;
+   font-size: 24px;
    font-family: var(--font-mono-global);
    color: var(--color-text-global);
    background-color: var(--color-bg-global);
