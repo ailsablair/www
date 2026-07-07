@@ -14,7 +14,7 @@
 }
 
 /* Base Body Setup */
-body {
+p {
    font-size: 16px;
    font-family: var(--font-mono-global);
    color: var(--color-text-global);
