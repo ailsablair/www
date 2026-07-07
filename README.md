@@ -1,7 +1,7 @@
 # www
 <www.ailsablair.com>
 
-For access to case studies prior to **Nuclear Promise X** go to <ailsablairportfolio.webflow.io>
+For access to case studies prior to **Nuclear Promise X** go to  [ailsablairportfolio.webflow.io][(https://ailsablairportfolio.webflow.io)]
 
 My portfolio website is currently under maintenance; as I make some tweaks to how the MCP servers interact with each other on the back-end. 
 
