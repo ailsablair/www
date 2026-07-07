@@ -14,13 +14,14 @@
 }
 
 /* Base Body Setup */
-p {
+body {
    font-size: 16px;
    font-family: var(--font-mono-global);
    color: var(--color-text-global);
    background-color: var(--color-bg-global);
    margin: 0;
    padding: 24px;
+   box-sizing: border box;
    line-height: 1.5;
    -webkit-font-smoothing: antialiased;
 }
