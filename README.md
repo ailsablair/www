@@ -8,7 +8,7 @@ My portfolio website is currently under maintenance; as I make some tweaks to ho
 # Upcoming releases
 
 ## Relaunch of www
-- Creating an infrastructure of **APIs, CLIs and MCP Servers** to push www updates from _Figma_, using **AI**
+- Creating an infrastructure of **APIs, CLIs and MCP Servers** to push www updates from _Figma_, using **No-Code AI**
 - Reduction of backend costs by limiting the flow of information across different tools
 - Access to new case studies documenting time at _Nuclear Promise X_
 - Updates to case studies from <ailsablairportfolio.webflow.io>
