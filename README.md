@@ -1,9 +1,9 @@
 # www
 www.ailsablair.com
 
-For access to case studies prior to **Nuclear Promise X** go to the [old version of my www](https://ailsablairportfolio.webflow.io) (__pw__: d3sign)
+My portfolio website is currently under maintenance; as I make some tweaks to how the **APIs, CLIs and MCP servers** interact with each other on the back-end. 
 
-My portfolio website is currently under maintenance; as I make some tweaks to how the MCP servers interact with each other on the back-end. 
+For access to case studies prior to _Nuclear Promise X_ go to the [old version of my www](https://ailsablairportfolio.webflow.io) (__pw__: d3sign)
 
 # Upcoming releases
 
