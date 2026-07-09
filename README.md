@@ -1,4 +1,4 @@
-<pre><code>Past case studies: [ablair.](https://ablair.webflow.io)</code></pre>
+<pre><code>Past case studies: ablair.webflow.io</code></pre>
 <br>
 
 # www
