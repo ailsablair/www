@@ -69,7 +69,7 @@ alert-text {
    color: inherit;
 }
 
-alert-text.bold {
+alert-text-bold {
    position: left;
    font-size: 13px;
    font-weight: 600;
