@@ -80,14 +80,14 @@
    LINKS
    ========================================================================== */
 
-.a {
+a {
   color: var(--color-link-global);
   text-decoration: #EC379B;
   margin-left: 2px;
   margin-right: 2px;
 }
 
-.a:hover {
+a:hover {
   text-weight: bold;
   text-decoration: underline;
 }
