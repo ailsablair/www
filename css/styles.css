@@ -3,8 +3,25 @@
    ========================================================================== */
 
 :root {
+  /* Position */
+  --position-left: left;
+  --position-center: center;
+  --position-right: right;
+   
   /* System Typography */
   --font-mono-global: ui-monospace, "SF Mono", "SFMono-Regular", "Cascadia Code", "Cascadia Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  --font-global: "Google Sans Flex", sans-serif;
+         
+  /* Font Weight */
+  --font-weight--thin: 100;
+  --font-weight--extralight: 200;
+  --font-weight--default: 300;
+  --font-weight--regular: 400;
+  --font-weight--medium: 500;
+  --font-weight--semibold: 600;
+  --font-weight--bold: 700;
+  --font-weight--extrabold: 800;
+  --font-weight--black: 900;
    
   /* Color Palette */
   --color-bg-global: #FAFAFA;
@@ -26,13 +43,98 @@
    -webkit-font-smoothing: antialiased;
 }
 
+.google-sans-flex-default {
+  font-family: var(--font-global);
+  font-optical-sizing: auto;
+  font-weight: var(--font-weight--default);
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "ROND" 0;
+}
+
+.google-sans-flex-regular {
+  font-family: var(--font-global);
+  font-optical-sizing: auto;
+  font-weight: var(--font-weight--regular);
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "ROND" 0;
+}
+
+.google-sans-flex-medium {
+  font-family: var(--font-global);
+  font-optical-sizing: auto;
+  font-weight: var(--font-weight--medium);
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "ROND" 0;
+}
+
+.google-sans-flex-semibold {
+  font-family: var(--font-global);
+  font-optical-sizing: auto;
+  font-weight: var(--font-weight--semibold);
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "ROND" 0;
+}
+
+.google-sans-flex-bold {
+  font-family: var(--font-global);
+  font-optical-sizing: auto;
+  font-weight: var(--font-weight--bold);
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "ROND" 0;
+}
+
+.google-sans-flex-extralight {
+  font-family: var(--font-global);
+  font-optical-sizing: auto;
+  font-weight: var(--font-weight--extralight);
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "ROND" 0;
+}
+
+.google-sans-flex-thin {
+  font-family: var(--font-global);
+  font-optical-sizing: auto;
+  font-weight: var(--font-weight--thin);
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "ROND" 0;
+}
+
+
 /* ==========================================================================
    TYPOGRAPHY ELEMENTS
    ========================================================================== */
 
 .h1 {
   font-size: 64px;
-  font-weight: 600; /* Semibold */
+  font-weight:  var(--font-weight--semibold);
   color: var(--color-text-heading-1);
   margin-top: 8px;
   margin-bottom: 12px;
@@ -40,7 +142,7 @@
 
 .h2 {
   font-size: 48px;
-  font-weight: 500; /* Medium */
+  font-weight: var(--font-weight--medium);
   color: inherit;   /* Explicitly inherits the global font color default (#1C1C1C) */
   margin-top: 8px;
   margin-bottom: 12px;
@@ -48,7 +150,7 @@
 
 .h3 {
   font-size: 36px;
-  font-weight: 700; /* Bold */
+  font-weight: var(--font-weight--bold);
   color: var(--color-text-heading-1);
   margin-top: 4px;
   margin-bottom: 12px;
@@ -56,25 +158,32 @@
 
 .h4 {
   font-size: 24px;
-  font-weight: 500; /* Medium */
+  font-weight: var(--font-weight--medium);
   color: inherit;   /* Explicitly inherits the global font color default (#1C1C1C) */
   margin-top: 4px;
   margin-bottom: 12px;
 }
 
 .alert-text {
-   position: left;
+   position: var(--position-left);
    font-size: 13px;
-   font-weight: 300;
+   font-weight: var(--font-weight--default);
    color: inherit;
 }
 
 .alert-text-bold {
-   position: left;
+   position: var(--position-left);
    font-size: 13px;
-   font-weight: 600;
+   font-weight: var(--font-weight--semibold);
    color: inherit;
 }
+
+.body-mono {
+   font-family: var(--font-mono-global);
+   font-weight: var(--font-weight--regular);
+}
+
+
 
 /* ==========================================================================
    LINKS
@@ -88,7 +197,7 @@ a {
 }
 
 a:hover {
-  text-weight: bold;
+  font-weight: var(--font-weight--bold);
   text-decoration: underline;
 }
 
@@ -98,7 +207,7 @@ a:hover {
    ========================================================================== */
 
 .alert {
-    position: center;
+    position: var(--position-center);
     max-width: 50%;
     padding: 0.75rem 1.25rem;
     margin-bottom: 1rem;
@@ -107,14 +216,14 @@ a:hover {
 }
 
 .alert-primary {
-    position: center;
+    position: var(--position-center);
     color: #2A5C8D;
     background-color: #C5EAFB;
     border-color: #0EA5E9;
 }
 
 .alert-secondary {
-    position: center;
+    position: var(--position-center);
     color: #1C1C1C;
     background-color: #FED766;
     border-color: #FED766;
