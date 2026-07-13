@@ -88,11 +88,12 @@ a:hover {
     margin-bottom: 1rem;
     border: 1px solid;
     border-radius: 0.25rem;
+    max-width: 600px
 }
 
 .alert-primary {
     color: #2A5C8D;
-    background-color: #9FDDF9;
+    background-color: #C5EAFB;
     border-color: #0EA5E9;
 }
 
