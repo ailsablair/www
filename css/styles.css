@@ -88,7 +88,7 @@ a:hover {
     margin-bottom: 1rem;
     border: 1px solid;
     border-radius: 0.25rem;
-    max-width: 600px
+    max-width: 50%;
 }
 
 .alert-primary {
