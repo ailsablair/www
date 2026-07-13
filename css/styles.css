@@ -174,7 +174,7 @@
 .alert-text-bold {
    position: var(--position-left);
    font-size: 13px;
-   font-weight: var(--font-weight--semibold);
+   font-weight: var(--font-weight--regular);
    color: inherit;
 }
 
