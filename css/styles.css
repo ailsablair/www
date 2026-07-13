@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Global Design Tokens & Base Styles
+   GLOBAL DESIGN TOKENS & BASE STYLES
    ========================================================================== */
 
 :root {
@@ -9,7 +9,7 @@
   /* Color Palette */
   --color-bg-global: #FAFAFA;
   --color-text-global: #1C1C1C;
-  --color-text-heading-1: #0EA5E9;
+  --color-text-heading-1: #1C1C1C;
   --color-link-global: #EC379B;
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 /* ==========================================================================
-   Typography Elements
+   TYPOGRAPHY ELEMENTS
    ========================================================================== */
 
 h1 {
@@ -63,7 +63,7 @@ h4 {
 }
 
 /* ==========================================================================
-   Links
+   LINKS
    ========================================================================== */
 
 a {
@@ -75,4 +75,29 @@ a {
 
 a:hover {
   text-decoration: bold;
+}
+
+
+/* ==========================================================================
+   ALERTS & NOTIFICATIONS
+   ========================================================================== */
+
+.alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-primary {
+    color: #03478C;
+    background-color: #78CFF7;
+    border-color: #0EA5E9;
+}
+
+.alert-secondary {
+    color: #383d41;
+    background-color: #e2e3e5;
+    border-color: #d6d8db;
 }
