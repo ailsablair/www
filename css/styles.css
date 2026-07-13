@@ -74,7 +74,8 @@ a {
 }
 
 a:hover {
-  text-decoration: bold;
+  text-weight: bold;
+  text-decoration: underline;
 }
 
 
