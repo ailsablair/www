@@ -221,6 +221,7 @@ a:hover {
    ========================================================================== */
 
 .alert {
+    text-style: var(--footnote-default)
     position: var(--position-center);
     width: fit-content;
     padding: 0.75rem 1.25rem;
