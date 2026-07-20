@@ -1,123 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- HEADER BEGINS -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ailsa Blair - Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
-<br>
-        <center><div class="alert alert-primary">
-            <b>Check out previous case studies:</b> <a href="https://ablair.webflow.io">previous portfolio (now in Webflow)</a>
-         </div></center>
-<br>
-    <title>Ailsa Blair</title>
-</head>
     
-<!-- BODY BEGINS -->
-<body>
-    <center>
-        <h1>Ailsa Blair</h1>
-        <h4>Technical (AI) Solutions Engineer & Delivery Leader.</h4>
-        <p>
-            <b><a href="https://github.com/ailsablair/www">[www/README.md]</a></b>
-        </p>
-    </center>
-    <br>
-
-        <!-- PROJECT TABLE -->
-<center>
     <style>
-.project-table {
-    overflow: auto;
-    width: 50%;
-}
+        /* Global & Layout Styles */
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1c1c1c;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
 
-.project-table table {
-    border: 0.5px solid #AFD6FD;
-    height: 100%;
-    width: 50%;
-    table-layout: auto;
-    border-collapse: collapse;
-    border-spacing: 1px;
-    text-align: left;
-}
+        /* Top Alert Banner */
+        .alert {
+            padding: 0.75rem 1.25rem;
+            margin-bottom: 2rem;
+            border-radius: 6px;
+            font-size: 0.95rem;
+        }
+        .alert-primary {
+            background-color: #e2f0fe;
+            border: 1px solid #AFD6FD;
+            color: #03478C;
+        }
+        .alert a {
+            color: #03478C;
+            font-weight: bold;
+        }
 
-.project-table caption {
-    caption-side: top;
-    text-align: left;
-}
+        /* Profile Header */
+        header h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2.5rem;
+        }
+        header h4 {
+            margin-top: 0.5rem;
+            font-weight: 500;
+            color: #555;
+        }
 
-.project-table th {
-    border: 0.5px solid #AFD6FD;
-    background-color: #03478C;
-    color: #FFFFFF;
-    padding: 4px;
-}
+        /* Modernized Project Table Layout */
+        .project-table-container {
+            overflow-x: auto;
+            margin: 3rem auto;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-radius: 4px;
+        }
 
-.project-table td {
-    border: 0.5px solid #AFD6FD;
-    padding: 4px;
-}
+        .project-table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 0.5px solid #AFD6FD;
+            text-align: left;
+            font-size: 0.95rem;
+        }
 
-.project-table tr:nth-child(even) td {
-    background-color: #ffffff;
-    color: #1c1c1c;
-}
+        .project-table th {
+            border: 0.5px solid #AFD6FD;
+            background-color: #03478C;
+            color: #FFFFFF;
+            padding: 12px;
+            font-weight: 600;
+        }
 
-.project-table tr:nth-child(odd) td {
-    background-color: #FAFAFA;
-    color: #1c1c1c;
-}
-</style>
-<div class="project-table" role="region" tabindex="0">
-<table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Role</th>
-            <th>Repository</th>
-            <th>URL</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Nomad</td>
-            <td>Unconventional rentals for those looking for alternate housing arrangements.</td>
-            <td>AI Solutions Engineer, AI Developer (vibe coder 😎)</td>
-            <td><a href="https://github.com/ailsablair/nomad">[./nomad]</a></td>
-            <td><a href="https://apps.ailsablair.ca/nomad">[live app]</a></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-  </center>
-<br><br>
-        <!-- CONTACT -->
-  <center> <div style="text-decoration: var(--footnote-default)">
-            <a href="mailto:hello@ailsablair.com">
-            hello@ailsablair.com
-            </a>
-        <br>
-        <!-- RESUME LINK -->
-            <a href="docs/ailsa-blair_resume.pdf">
-            [Download Resume ↓]
-            </a>  
+        .project-table td {
+            border: 0.5px solid #AFD6FD;
+            padding: 12px;
+            vertical-align: middle;
+        }
+
+        .project-table tr:nth-child(even) td {
+            background-color: #ffffff;
+        }
+
+        .project-table tr:nth-child(odd) td {
+            background-color: #FAFAFA;
+        }
+
+        /* Footer & Contact info */
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+        }
+        .contact-links a {
+            display: inline-block;
+            margin: 0.5rem 0;
+            color: #03478C;
+            text-decoration: none;
+        }
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ALERT BANNER -->
+    <div class="alert alert-primary">
+        Check out previous case studies: 
+        <a href="https://ablair.webflow.io" target="_blank" rel="noopener">previous portfolio (now in Webflow)</a>
+    </div>
+
+    <!-- HEADER SECTION -->
+    <header>
+        <h1>Ailsa Blair</h1>
+        <h4>Technical (AI) Solutions Engineer & Delivery Leader</h4>
+        <p>
+            <strong><a href="https://github.com/ailsablair/www" target="_blank" rel="noopener">[www/README.md]</a></strong>
+        </p>
+    </header>
+
+    <!-- MAIN PORTFOLIO PROJECTS -->
+    <main>
+        <div class="project-table-container" role="region" aria-label="Projects Table" tabindex="0">
+            <table class="project-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Role</th>
+                        <th>Repository</th>
+                        <th>URL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <strong><td>Nomad</td></strong>
+                        <td>Unconventional rentals for those looking for alternate housing arrangements.</td>
+                        <td>AI Solutions Engineer, AI Developer (vibe coder 😎)</td>
+                        <td><a href="https://github.com/ailsablair/nomad" target="_blank" rel="noopener">[./nomad]</a></td>
+                        <td><a href="https://apps.ailsablair.ca/nomad" target="_blank" rel="noopener">[live app]</a></td>
+                    </tr>
+                    <!-- Row templates ready for your next projects -->
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-  </center>
+    </main>
+
+    <!-- CONTACT & FOOTER -->
+    <footer>
+        <div class="contact-links">
+            <a href="mailto:hello@ailsablair.com"><strong>hello@ailsablair.com</strong></a>
+            <br>
+            <a href="docs/ailsa-blair_resume.pdf" download>[Download Resume ↓]</a>  
+        </div>
+    </footer>
 
     <script src="js/myscripts.js"></script>
 </body>
